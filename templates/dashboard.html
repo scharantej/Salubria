@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+</head>
+<body>
+<h1>Dashboard</h1>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Sleep</th>
+<th>Heart Rate</th>
+</tr>
+</thead>
+<tbody>
+{% for row in data %}
+<tr>
+<td>{{ row['activity'] }}</td>
+<td>{{ row['sleep'] }}</td>
+<td>{{ row['heart'] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
